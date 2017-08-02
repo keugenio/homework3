@@ -3,8 +3,17 @@
  **/
 
 
-#characterName p{
-  font-family: 'Permanent Marker','Times' cursive;
-  font-size: 48px;
+#marvelCharacter{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  color: blue;
+  line-height: 1.5;
 }
 
+#messageboard{
+  word-wrap: break-word;
+}
+
+#description {
+  margin: 10px;
+}
