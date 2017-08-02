@@ -44,21 +44,31 @@
         <div class="col-sm-8" id="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <h1>Marvel Hangman</h1>
-                    <hr>
-                    Guess the Marvel comic character name
-                    <div id="marvelCharacter" id="characterName">
-                        <p id="marvelCharacterName">start by typing in letters</p>
+                <div class="col-sm-6 pull-left">
+                    <div class="container">
+                        <h1>Marvel Hangman</h1>
+                        <hr>
+                        <p>Guess the Marvel comic character name.</p>
+                        <p id="instructions">Just begin typing your guesses to start.</p><br>
+                        <div id="guessType">Current Guess:</div>
+                        <div id="marvelCharacter" class="text-center">
+                            loading...
+                        </div>
+                        <div id="description"> if nothing loads, Marvel server may be busy. Try again.</div>  
+                        <hr>                        
+                        <div id="messageboard"></div> 
+                        <hr>
+                        <FORM>
+                            <INPUT id="btnReload" TYPE="button" onClick="history.go(0)" VALUE="Reload">
+                        </FORM>
                     </div>
-                    <div id="messageboard"></div>                
                 </div>
                 <div class="col-sm-6">
                     <figure>
-                        <img id="marvelCharacterImage" class="figure-img img-fluid rounded pull-left" alt="character image"></img>
-                        <figcaption class="figure-caption align-bottom" id="marvelCopyright"></figcaption>
-                    </figure>
-                </div>
+                        <img id="marvelCharacterImage" class="figure-img img-fluid rounded text-center d-block" alt="character image"></img>
+                        <figcaption class="figure-caption align-bottom text-center" id="marvelCopyright"></figcaption>
+                    </figure>                    
+                </div>              
             </div>
         </div>
 
