@@ -21,7 +21,10 @@
 									"&apikey=" + publickey + 
 									"&hash=" + hash;
 
-$.getJSON(htmlCall, function(dowloadedJSON) {
+  $.ajax({
+    url: htmlCall,
+    method: "GET"
+  }).done(function(dowloadedJSON) {	
     var characterImage=dowloadedJSON.data.results[randomIndex].thumbnail.path + "/portrait_uncanny.jpg";
     var copyright = dowloadedJSON.attributionHTML;
     
